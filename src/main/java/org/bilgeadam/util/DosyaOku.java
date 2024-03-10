@@ -10,8 +10,10 @@ import org.bilgeadam.data.Memur;
 import org.bilgeadam.data.Personel;
 import org.bilgeadam.data.Yonetici;
 
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Path;
@@ -53,6 +55,7 @@ public class DosyaOku {
         }
         return personelList;
     }
+
 
     private Path findFilePath(String dosyaAdi) {
         ClassLoader classLoader = DosyaOku.class.getClassLoader();

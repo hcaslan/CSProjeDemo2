@@ -1,8 +1,21 @@
 package org.bilgeadam.data;
 
-public class MaasBordro {
+import java.io.Serializable;
+
+public class MaasBordro implements Serializable {
+    private String bordro;
     private Personel personel;
-    private String date;
 
+    public MaasBordro(String bordro, Personel personel) {
+        this.personel = personel;
+        this.bordro = bordro;
+    }
 
+    @Override
+    public String toString() {
+        return "MaasBordro{" +
+                "date='" + bordro + '\'' +
+                ", personel=" + personel +
+                '}';
+    }
 }

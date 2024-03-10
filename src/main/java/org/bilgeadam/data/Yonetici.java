@@ -4,8 +4,8 @@ import org.bilgeadam.constant.Role;
 
 public class Yonetici extends Personel{
     public static final int MIN_HOURLY_RATE = 500;
-    private int hourlyRate;
-    private int bonus;
+    private transient  int hourlyRate;
+    private transient  int bonus;
     public Yonetici(String name, String surname, Role role) {
         super(name, surname, role);
     }

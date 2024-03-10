@@ -8,7 +8,7 @@ import java.util.logging.Level;
 public class Memur extends Personel{
     private static final int MAX_WORKING_HOUR = 180;
     private static final double OVERTIME_FACTOR = 1.5;
-    private MemurLevel level;
+    private transient  MemurLevel level;
 
     public Memur(String name, String surname, Role role) {
         super(name, surname, role);

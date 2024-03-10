@@ -33,20 +33,6 @@ public class InputHelper {
         return input;
     }
 
-    public static LocalDate getLocalDateInput() {
-        LocalDate localDate;
-            try {
-                localDate = LocalDate.parse(
-                        getIntegerInput(OutputMessage.GET_YEAR_FROM_USER.getMessage()) + "-" +
-                                getIntegerInput(OutputMessage.GET_MONTH_FROM_USER.getMessage()) + "-" +
-                                getIntegerInput(OutputMessage.GET_DAY_FROM_USER.getMessage()));
-                return localDate;
-            } catch (DateTimeParseException e) {
-                OutputHelper.errorMessage(OutputMessage.INPUT_MISMATCH_LOCAL_DATE.getMessage());
-                getLocalDateInput();
-            }
-            return null;
-    }
     public static MemurLevel getLevelInput(){
         return matchingLevel(getStringInput(OutputMessage.GET_LEVEL_FROM_USER.getMessage()));
     }

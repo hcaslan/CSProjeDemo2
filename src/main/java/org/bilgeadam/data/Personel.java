@@ -4,8 +4,8 @@ import org.bilgeadam.constant.Role;
 
 public abstract class Personel {
     private String name;
-    private String surname;
-    private Role role;
+    private transient String surname;
+    private transient Role role;
     private int workingHours;
     private PaymentDetail paymentDetail;
 
