@@ -1,0 +1,26 @@
+[
+  {
+    "bordro": "MART 2024",
+    "personel": {
+      "name": "Fatih",
+      "workingHours": 500,
+      "paymentDetail": {
+        "mainPayment": 250000.0,
+        "overtime": 500.0,
+        "totalPayment": 250500.0
+      }
+    }
+  },
+  {
+    "bordro": "MART 2024",
+    "personel": {
+      "name": "Beyazıt",
+      "workingHours": 500,
+      "paymentDetail": {
+        "mainPayment": 250000.0,
+        "overtime": 240000.0,
+        "totalPayment": 490000.0
+      }
+    }
+  }
+]
