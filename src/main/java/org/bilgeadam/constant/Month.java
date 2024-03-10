@@ -16,8 +16,8 @@ public enum Month {
 
     private int order;
 
-    private Month(int ayNumarasi) {
-        this.order = ayNumarasi;
+    private Month(int order) {
+        this.order = order;
     }
 
     public int getMonth() {

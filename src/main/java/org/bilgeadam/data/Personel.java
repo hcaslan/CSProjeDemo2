@@ -22,7 +22,8 @@ public abstract class Personel {
         return
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", role=" + role;
+                ", role=" + role +
+                        ", " + paymentDetail;
     }
 
     public String getName() {

@@ -1,10 +1,12 @@
 package org.bilgeadam.util;
 
-import org.bilgeadam.constant.MemurLevel;
-import org.bilgeadam.constant.Month;
+import org.bilgeadam.constant.*;
 
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.file.*;
 import java.time.LocalDate;
-import java.util.Locale;
+import java.util.Objects;
 
 public class Generator {
     public static String dateGenerator(){
@@ -20,5 +22,15 @@ public class Generator {
             }
         }
         return matchingEnum;
+    }
+    public static Path createFilePath(String dosyaAdi) {
+        ClassLoader classLoader = DosyaOku.class.getClassLoader();
+        URL resource = classLoader.getResource(dosyaAdi);
+        try {
+            return Paths.get(Objects.requireNonNull(resource).toURI());
+        } catch (URISyntaxException | NullPointerException e) {
+            OutputHelper.errorMessage((OutputMessage.ERROR.getMessage() + e.getCause()));
+        }
+        return null;
     }
 }

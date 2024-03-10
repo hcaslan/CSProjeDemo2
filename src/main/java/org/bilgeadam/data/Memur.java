@@ -3,8 +3,6 @@ package org.bilgeadam.data;
 import org.bilgeadam.constant.MemurLevel;
 import org.bilgeadam.constant.Role;
 
-import java.util.logging.Level;
-
 public class Memur extends Personel{
     private static final int MAX_WORKING_HOUR = 180;
     private static final double OVERTIME_FACTOR = 1.5;
@@ -32,8 +30,8 @@ public class Memur extends Personel{
         }else if(super.getWorkingHours() > MAX_WORKING_HOUR){
             mainPayment = super.getWorkingHours()* this.level.getHourlyRate();
             overtime = (super.getWorkingHours()-MAX_WORKING_HOUR)*(OVERTIME_FACTOR*this.level.getHourlyRate());
-            totalPayment = mainPayment+overtime;
         }
+        totalPayment = mainPayment+overtime;
         super.setPaymentDetail(new PaymentDetail(mainPayment, overtime, totalPayment));
     }
 

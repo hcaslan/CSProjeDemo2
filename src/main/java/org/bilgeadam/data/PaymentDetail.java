@@ -2,12 +2,12 @@ package org.bilgeadam.data;
 
 public class PaymentDetail {
     private double mainPayment;
-    private double overtime;
+    private double additionalPayment;
     private double totalPayment;
 
-    public PaymentDetail(double mainPayment, double overtime, double totalPayment) {
+    public PaymentDetail(double mainPayment, double additionalPayment, double totalPayment) {
         this.mainPayment = mainPayment;
-        this.overtime = overtime;
+        this.additionalPayment = additionalPayment;
         this.totalPayment = totalPayment;
     }
 
@@ -19,12 +19,12 @@ public class PaymentDetail {
         this.mainPayment = mainPayment;
     }
 
-    public double getOvertime() {
-        return overtime;
+    public double getAdditionalPayment() {
+        return additionalPayment;
     }
 
-    public void setOvertime(double overtime) {
-        this.overtime = overtime;
+    public void setAdditionalPayment(double additionalPayment) {
+        this.additionalPayment = additionalPayment;
     }
 
     public double getTotalPayment() {
@@ -39,7 +39,7 @@ public class PaymentDetail {
     public String toString() {
         return "PaymentDetail{" +
                 "mainPayment=" + mainPayment +
-                ", overtime=" + overtime +
+                ", additionalPayment=" + additionalPayment +
                 ", totalPayment=" + totalPayment +
                 '}';
     }

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Fatih",
+    "surname": "Alkan",
+    "role": "Yonetici"
+  },
+  {
+    "name": "Beyazit",
+    "surname": "Dalgic",
+    "role": "Memur"
+  },
+  {
+    "name": "Berkin",
+    "surname": "Yardimci",
+    "role": "Yonetici"
+  },
+  {
+    "name": "Aslan",
+    "surname": "Ozen",
+    "role": "Memur"
+  }
+]
